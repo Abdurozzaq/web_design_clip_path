@@ -1,0 +1,31 @@
+.section1-container {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+}
+
+.s1c-1 {
+    text-align: center;
+}
+
+.s1c-2-subtitle {
+    margin-bottom: 2px;
+    color: #151515;
+}
+
+.s1c-2-text {
+    margin-top: 0px;
+    color: #9d9d9d;
+}
+
+@media only screen and (max-width: 900px) {
+    .section1-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .s1c-2 {
+        grid-template-row: 2; /* added */
+        text-align: center;
+    }
+}

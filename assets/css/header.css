@@ -1,0 +1,104 @@
+body {
+	margin: 0px;
+	font-family: Roboto;
+}
+
+@font-face {
+	font-family: Roboto;
+	src: url(../font/Roboto-Regular.ttf);
+  }
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: transparent;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.nav-links {
+	float: right;
+}
+
+li a:hover:not(.active) {
+	color: #E000A8;
+}
+
+.active {
+	color: #E000A8;
+}
+
+@media screen and (max-width: 600px) {
+	.logo-text {
+		display: none;
+	}
+	.nav-links {
+		float: none;
+	}
+  }
+
+.header {
+	height: 80vh;
+	background: #8E2DE2;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #4A00E0, #8E2DE2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	clip-path: polygon(0 0, 100% 0, 100% 84%, 0% 100%);
+}
+
+.header-content-container {
+ 	display: grid;
+ 	grid-template-columns: 45vw 45vw;
+}
+
+.hct-1-container {
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	font-size: x-large;
+	color: white;
+}
+
+.subscribe-btn {
+	background-color: #E000A8; /* Green */
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	padding: 10px 24px;
+  }
+
+.hct-2-container {
+	text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+	.header-content-container {
+	  display: grid;
+	  grid-template-columns: 1fr;
+	}
+	
+	.hct-2 {
+	  grid-row: 2; /* added */
+	}
+	.header {
+		height: 100%;
+		padding-bottom: 20%;
+	}
+  }
